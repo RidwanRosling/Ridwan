@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Mengatur margin dan padding default untuk semua elemen */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styling untuk header */
+        header {
+            height: 200px;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header-text h1 {
+            margin: 0;
+        }
+
+        /* Styling untuk bagian utama (main) */
+        .main {
+            height: 200px;
+            background-color: darkcyan;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .main h2 {
+            margin: 10px 0;
+        }
+
+        /* Styling untuk footer */
+        footer {
+            height: 300px;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        footer h2 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <h1>Random Jokes</h1>
+        </div>
+    </header>
+
+    <div class="main">
+        <!-- <h1>Jokes Random by me</h1> -->
+        <h2><%= setup %></h2>
+        <h2><%= delivery %></h2>
+        <p>click refresh for another jokes</p>
+    </div>
+
+    <footer>
+        <h2>Made By Ridwan</h2>
+    </footer>
+
+</body>
+</html>
